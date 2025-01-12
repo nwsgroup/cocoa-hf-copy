@@ -1,0 +1,137 @@
+{
+  "models": {
+    "vit_large": {
+      "name": "timm/vit_large_patch16_224.augreg_in21k_ft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "ViT Large model (632M parameters) - ImageNet-21k pretrained"
+    },
+    "vit_base": {
+      "name": "timm/vit_base_patch16_224.augreg_in21k_ft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "ViT Base model (86M parameters) - ImageNet-21k pretrained"
+    },
+    "convnext_xxlarge": {
+      "name": "timm/convnext_xxlarge.clip_laion2b_soup_ft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "ConvNeXt XXLarge (846M parameters) - LAION-2B CLIP pretrained"
+    },
+    "convnext_xlarge": {
+      "name": "timm/convnext_xlarge.fb_in22k_ft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "ConvNeXt XLarge (350M parameters) - ImageNet-22k pretrained"
+    },
+    "swin_large": {
+      "name": "timm/swinv2_large_window12to24_192to384.ms_in22k_ft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "Swin Transformer Large (196M parameters) - ImageNet-22k pretrained"
+    },
+    "efficientnet_b7": {
+      "name": "timm/tf_efficientnet_b7.ns_jft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "EfficientNet B7 (66M parameters) - JFT-300M pretrained"
+    },
+    "efficientnet_b5": {
+      "name": "timm/tf_efficientnet_b5.ns_jft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1.5e-5",
+      "description": "EfficientNet B5 (30M parameters) - JFT-300M pretrained"
+    },
+    "efficientnet_b3": {
+      "name": "timm/tf_efficientnet_b3.ns_jft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "EfficientNet B3 (12M parameters) - JFT-300M pretrained"
+    },
+    "efficientnet_b0": {
+      "name": "timm/tf_efficientnet_b0.ns_jft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "EfficientNet B0 (5.3M parameters) - JFT-300M pretrained"
+    },
+    "mobilenetv3_large": {
+      "name": "timm/mobilenetv3_large_100.ra_in1k",
+      "batch_size": 64,
+      "learning_rate": "3e-5",
+      "description": "MobileNetV3 Large (5.5M parameters) - Efficient mobile architecture"
+    },
+    "mobilenetv3_small": {
+      "name": "timm/mobilenetv3_small_100.ra_in1k",
+      "batch_size": 64,
+      "learning_rate": "3e-5",
+      "description": "MobileNetV3 Small (2.5M parameters) - Lightweight mobile architecture"
+    },
+    "eva_giant": {
+      "name": "timm/eva_giant_patch14_224.clip_ft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "EVA Giant model (1B+ parameters) - CLIP pretrained"
+    },
+    "maxvit_xlarge": {
+      "name": "timm/maxvit_xlarge_tf_224.in21k_ft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "MaxViT XLarge (475M parameters) - ImageNet-21k pretrained"
+    },
+    "beit_large": {
+      "name": "timm/beit_large_patch16_224.in22k_ft_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "BEiT Large (325M parameters) - ImageNet-22k pretrained"
+    },
+    "resnet_152": {
+      "name": "timm/resnet152.a1_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "ResNet-152 - Deepest ResNet variant (60M parameters)"
+    },
+    "resnet_101": {
+      "name": "timm/resnet101.a1_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "ResNet-101 (44M parameters)"
+    },
+    "resnet_50": {
+      "name": "timm/resnet50.a1_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "ResNet-50 (25M parameters)"
+    },
+    "resnet_34": {
+      "name": "timm/resnet34.a1_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "ResNet-34 (21M parameters)"
+    },
+    "vgg19": {
+      "name": "timm/vgg19.tv_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "VGG19 (144M parameters)"
+    },
+    "vgg16": {
+      "name": "timm/vgg16.tv_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "VGG16 (138M parameters)"
+    },
+    "vgg13": {
+      "name": "timm/vgg13.tv_in1k",
+      "batch_size": 64,
+      "learning_rate": "1e-4",
+      "description": "VGG13 (133M parameters)"
+    }
+  },
+  "default_settings": {
+    "dataset": "SemilleroCV/Cocoa-dataset",
+    "epochs": 100,
+    "seed": 1337,
+    "logging_steps": 1000,
+    "save_total_limit": 3
+  }
+}
