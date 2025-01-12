@@ -2,12 +2,12 @@
     "per_model_config": {
         "model": {
             "op_types": [
-                "Add",
-                "Conv",
-                "Relu",
-                "Identity",
                 "GlobalAveragePool",
-                "MaxPool"
+                "MaxPool",
+                "Conv",
+                "Gemm",
+                "Flatten",
+                "Relu"
             ],
             "weight_type": "QUInt8"
         }

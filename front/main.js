@@ -11,13 +11,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     status.textContent = "Loading model...";
 
-    const classifier = await pipeline("image-classification", "CristianR8/resnet50-finetuned");
+    //const classifier = await pipeline("image-classification", "SemilleroCV/resnet50-finetuned-bwmp2-224");
+    const classifier = await pipeline("image-classification", "Factral/test25");
 
     status.textContent = "Ready";
 
     async function detect(img) {
         status.textContent = "Analysing...";
         const output = await classifier(img.src, { topk: 0 });
+        console.log("output", output);
         status.textContent = "";
         console.log("output", output);
         status.innerHTML = `<strong>Prediction: ${output[0].label}</strong> <br> prob: ${output[0].score}`;

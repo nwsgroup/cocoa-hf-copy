@@ -1,0 +1,22 @@
+{
+    "num_labels": 6,
+  "id2label": {
+    "0": "fermentado",
+    "1": "hongo",
+    "2": "insecto",
+    "3": "insufi_fermen",
+    "4": "pizarroso",
+    "5": "violeta"
+  },
+  "label2id": {
+    "fermentado": 0,
+    "hongo": 1,
+    "insecto": 2,
+    "insufi_fermen": 3,
+    "pizarroso": 4,
+    "violeta": 5
+  },
+  "model_type": "resnet",
+  "num_channels": 3,
+  "transformers_version": "4.42.4"
+}
